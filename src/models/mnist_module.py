@@ -5,10 +5,10 @@ from pytorch_lightning import LightningModule
 from torchmetrics import MaxMetric
 from torchmetrics.classification.accuracy import Accuracy
 
-from src.models.components.simple_dense_net import SimpleDenseNet
+from src.models.components.threedna_encoder_components import Transformer
 
 
-class MNISTLitModule(LightningModule):
+class ThreeDNAEncoder(LightningModule):
     """Example of LightningModule for MNIST classification.
 
     A LightningModule organizes your PyTorch code into 5 sections:
